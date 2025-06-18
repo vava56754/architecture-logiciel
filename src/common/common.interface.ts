@@ -17,7 +17,7 @@ export interface Obstacle {
 
 export interface Command {
   id: string;
-  type: 'Z' | 'S' | 'Q' | 'D' | 'scan' | 'return';
+  type: 'Z' | 'S' | 'Q' | 'D' | 'scan' | 'return' | 'sequence';
   parameters?: any;
   timestamp: Date;
 }

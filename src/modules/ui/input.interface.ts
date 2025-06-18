@@ -1,9 +1,8 @@
 import { Command } from '../../common/common.interface';
 
 export interface IInput {
-  captureUserInput(): Command;
+  captureUserInput(): Promise<Command>;
   validateCommand(command: string): boolean;
   parseCommands(input: string): Command[];
-  getInputHistory(): Command[];
-  clearHistory(): void;
+  close(): void;
 }
